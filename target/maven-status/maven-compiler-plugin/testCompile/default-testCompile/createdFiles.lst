@@ -1,0 +1,5 @@
+rough\test.class
+runner\RunCuke.class
+StepDefinitions\Hook.class
+StepDefinitions\LoginSteps.class
+StepDefinitions\RegisterUserSteps.class

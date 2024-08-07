@@ -1,0 +1,13 @@
+com\myshopping\pages\CartPage.class
+com\myshopping\pages\DeletedAccountPage.class
+com\myshopping\pages\ContactUsPage.class
+com\myshopping\pages\menuCategoryBrand.class
+com\myshopping\pages\TopNavigation.class
+com\myshopping\base\SeleniumDriver.class
+com\myshopping\pages\LoginPage.class
+com\myshopping\base\Constants.class
+com\myshopping\utilities\TestConfig.class
+com\myshopping\utilities\TestUtil.class
+com\myshopping\pages\HomePage.class
+com\myshopping\base\BasePage.class
+com\myshopping\pages\ProductPage.class
