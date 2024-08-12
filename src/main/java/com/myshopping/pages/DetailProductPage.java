@@ -22,8 +22,12 @@ public class DetailProductPage extends BasePage{
 	@FindBy(css="div.product-information p:nth-child(3)")
 	WebElement lblCategory;
 	
-	@FindBy(css="div.product-information > span")
+	@FindBy(css="div.product-information > span span")
 	WebElement lblPrice;
+	
+	@FindBy(css="#quantity") 
+	WebElement txtQuantity;
+	
 	
 	@FindBy(css="div.product-information p:nth-child(6)")
 	WebElement lblAvailability;
@@ -33,7 +37,33 @@ public class DetailProductPage extends BasePage{
 	
 	@FindBy(css="div.product-information p:last-child")
 	WebElement lblBrand;
+
+	@FindBy(css="button[type='button']")
+	WebElement btnAddToCart;
 	
+	@FindBy(css="p.text-center  > a")
+	WebElement lnkViewCart;
+	
+	@FindBy(css=".modal-footer > button")
+	WebElement btnContinueShopping;
+	
+	public CartPage clickViewCart() {
+		lnkViewCart.click();
+		return new CartPage();
+	}
+	
+	
+	public void clickContinueShopping() {
+		btnContinueShopping.click();
+	}
+	
+	public void clickAddtoCart() {
+		btnAddToCart.click();
+	}
+	
+	public void editQuantity(String value) {
+		sendKey(txtQuantity, value);
+	}
 	
 	public void checkDetailProduct(String productName, String category, String price, String availability, String condition, String brand) {
 		Assert.assertEquals(lblProductName.getText(), productName);

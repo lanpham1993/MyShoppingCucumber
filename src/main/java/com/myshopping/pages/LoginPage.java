@@ -164,12 +164,12 @@ public class LoginPage extends BasePage {
 	}
 
 	public void enterAdress2(String Adress) {
-		scroll(adress2Txt);
+		scrollDown(adress2Txt);
 		adress2Txt.sendKeys(Adress);
 	}
 
 	public void enterCountry(String country) {
-		scrollDown();
+		scrollDown(countryDropDwn);
 		select(countryDropDwn, country);
 	}
 
@@ -198,7 +198,7 @@ public class LoginPage extends BasePage {
 	}
 
 	public void createAccount() {
-		scrollDown();
+		scrollDown(createAccBtn);
 		createAccBtn.click();
 	}
 

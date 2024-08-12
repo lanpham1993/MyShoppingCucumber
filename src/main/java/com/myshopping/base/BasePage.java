@@ -22,28 +22,36 @@ public class BasePage {
 	public static ExtentTest test;
     public String e;
     public static TopNavigation topMenu;
+    JavascriptExecutor js;
 	public BasePage() {
 		driver = SeleniumDriver.getDriver();
 		topMenu = new TopNavigation(driver);
+		js = (JavascriptExecutor) driver;
 	}
 
 	public void Click(WebElement element) {
 		element.click();
-		log.debug("Clicking on an Element : " + element);
-		test.log(LogStatus.INFO, "Clicking on : " + element);
+		//log.debug("Clicking on an Element : " + element);
+		//test.log(LogStatus.INFO, "Clicking on : " + element);
 	}
 
 	public void sendKey(WebElement element, String value) {
+		element.clear();
 		element.sendKeys(value);
-		log.debug("Typing in an Element : " + element + " entered value as : " + value);
+		//log.debug("Typing in an Element : " + element + " entered value as : " + value);
 
-		test.log(LogStatus.INFO, "Typing in : " + element + " entered value as " + value);
+		//test.log(LogStatus.INFO, "Typing in : " + element + " entered value as " + value);
 
 	}
 
 	public void mouseOver(WebElement element) {
 
 		new Actions(driver).moveToElement(element).perform();
+	}
+	
+	public void mouseOverAndClick(WebElement element) {
+
+		new Actions(driver).moveToElement(element).click().build().perform();
 	}
 
 	public void select(WebElement element, String value) {
@@ -63,14 +71,10 @@ public class BasePage {
 
 	}
 	
-
-	public void scroll(WebElement element) {
-		new Actions(driver).scrollToElement(element).perform();
-	}
 	
-	public void scrollDown() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,400)", "");
+	public void scrollDown(WebElement element) {
+		new Actions(driver).scrollToElement(element).perform();
+        js.executeScript("window.scrollBy(0,140)", "");
 	}
 	
 	public static void scrollUp() {

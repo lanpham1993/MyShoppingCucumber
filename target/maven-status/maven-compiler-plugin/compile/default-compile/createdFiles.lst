@@ -4,6 +4,7 @@ com\myshopping\pages\ContactUsPage.class
 com\myshopping\pages\menuCategoryBrand.class
 com\myshopping\pages\TopNavigation.class
 com\myshopping\base\SeleniumDriver.class
+com\myshopping\pages\DetailProductPage.class
 com\myshopping\pages\LoginPage.class
 com\myshopping\base\Constants.class
 com\myshopping\utilities\TestConfig.class

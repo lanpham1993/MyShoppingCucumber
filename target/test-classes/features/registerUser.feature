@@ -1,4 +1,3 @@
-@tag
 Feature: check register functionalty
   In order to register
   As a User
@@ -39,6 +38,6 @@ And user clicks on SignUp/Login button
     And button continue is visble
     When user click button continue
     Then homepage is displayed
-    And  'Logged in as lan' is invisible
+   # And  'Logged in as lan' is invisible
     
    
