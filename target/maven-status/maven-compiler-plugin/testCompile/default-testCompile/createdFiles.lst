@@ -1,6 +1,7 @@
 runner\RunCuke.class
 StepDefinitions\DeleteAccountSteps.class
 rough\test.class
+StepDefinitions\AddToCartSteps.class
 StepDefinitions\Hook.class
 StepDefinitions\LoginSteps.class
 StepDefinitions\ProductSteps.class

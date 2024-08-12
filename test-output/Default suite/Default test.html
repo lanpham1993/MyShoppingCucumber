@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 08 11:12:08 CEST 2024</td>
+<td>Started on:</td><td>Mon Aug 12 11:21:39 CEST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (510 ms)</td>
+<tr><td>Total time:</td><td>128 seconds (128943 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,120 +76,177 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.RunCuke.setUpClass()'><b>setUpClass</b><br>Test class: runner.RunCuke<br>Parameters: org.testng.TestRunner@263f04ca</td>
-<td><div><pre>io.cucumber.core.exception.CucumberException: java.lang.NoSuchFieldError: VERSION_2_3_30
-	at io.cucumber.core.plugin.PluginFactory.newInstance(PluginFactory.java:120)
-	at io.cucumber.core.plugin.PluginFactory.instantiate(PluginFactory.java:99)
-	at io.cucumber.core.plugin.PluginFactory.create(PluginFactory.java:63)
-	at io.cucumber.core.plugin.Plugins.createPlugins(Plugins.java:32)
-	at io.cucumber.core.plugin.Plugins.&lt;init&gt;(Plugins.java:25)
-	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:108)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.NoSuchFieldError: VERSION_2_3_30
-	at com.aventstack.extentreports.reporter.AbstractFileReporter.loadTemplateModel(AbstractFileReporter.java:54)
-	at com.aventstack.extentreports.reporter.ExtentSparkReporter.start(ExtentSparkReporter.java:136)
-	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onSubscribe(ExtentSparkReporter.java:116)
-	at io.reactivex.rxjava3.subjects.PublishSubject.subscribeActual(PublishSubject.java:133)
-	at io.reactivex.rxjava3.core.Observable.subscribe(Observable.java:13262)
-	at com.aventstack.extentreports.ReactiveSubject.attachReporter(ReactiveSubject.java:38)
-	at com.aventstack.extentreports.ExtentReports.attachReporter(ExtentReports.java:66)
-	at com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader.attach(ExtentService.java:436)
-	at com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader.initSpark(ExtentService.java:363)
-	at com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader.createViaProperties(ExtentService.java:207)
-	at com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader.&lt;clinit&gt;(ExtentService.java:183)
-	at com.aventstack.extentreports.service.ExtentService.getInstance(ExtentService.java:42)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.&lt;init&gt;(ExtentCucumberAdapter.java:142)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at io.cucumber.core.plugin.PluginFactory.newInstance(PluginFactory.java:116)
-	... 32 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace551016187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace551016187'><pre>io.cucumber.core.exception.CucumberException: java.lang.NoSuchFieldError: VERSION_2_3_30
-	at io.cucumber.core.plugin.PluginFactory.newInstance(PluginFactory.java:120)
-	at io.cucumber.core.plugin.PluginFactory.instantiate(PluginFactory.java:99)
-	at io.cucumber.core.plugin.PluginFactory.create(PluginFactory.java:63)
-	at io.cucumber.core.plugin.Plugins.createPlugins(Plugins.java:32)
-	at io.cucumber.core.plugin.Plugins.&lt;init&gt;(Plugins.java:25)
-	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:108)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.NoSuchFieldError: VERSION_2_3_30
-	at com.aventstack.extentreports.reporter.AbstractFileReporter.loadTemplateModel(AbstractFileReporter.java:54)
-	at com.aventstack.extentreports.reporter.ExtentSparkReporter.start(ExtentSparkReporter.java:136)
-	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onSubscribe(ExtentSparkReporter.java:116)
-	at io.reactivex.rxjava3.subjects.PublishSubject.subscribeActual(PublishSubject.java:133)
-	at io.reactivex.rxjava3.core.Observable.subscribe(Observable.java:13262)
-	at com.aventstack.extentreports.ReactiveSubject.attachReporter(ReactiveSubject.java:38)
-	at com.aventstack.extentreports.ExtentReports.attachReporter(ExtentReports.java:66)
-	at com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader.attach(ExtentService.java:436)
-	at com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader.initSpark(ExtentService.java:363)
-	at com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader.createViaProperties(ExtentService.java:207)
-	at com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader.&lt;clinit&gt;(ExtentService.java:183)
-	at com.aventstack.extentreports.service.ExtentService.getInstance(ExtentService.java:42)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.&lt;init&gt;(ExtentCucumberAdapter.java:142)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at io.cucumber.core.plugin.PluginFactory.newInstance(PluginFactory.java:116)
-	... 32 more
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify all products and detail page", "test scratch"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.automationexercise.com/product_details/16] but found [https://www.automationexercise.com/product_details/19]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.base.BasePage.checkUrl(BasePage.java:99)
+	at StepDefinitions.ProductSteps.is_displayed(ProductSteps.java:41)
+	at ✽.&apos;https://www.automationexercise.com/product_details/16&apos; is displayed(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/test.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace556534527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace556534527'><pre>java.lang.AssertionError: expected [https://www.automationexercise.com/product_details/16] but found [https://www.automationexercise.com/product_details/19]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.base.BasePage.checkUrl(BasePage.java:99)
+	at StepDefinitions.ProductSteps.is_displayed(ProductSteps.java:41)
+	at ✽.&apos;https://www.automationexercise.com/product_details/16&apos; is displayed(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/test.feature:11)
 </pre></div></td>
-<td>0</td>
+<td>6</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify all products and detail page", "Check product page fucntionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [Sleeves Top and Short - Blue &amp; Pink] but found [Sleeveless Unicorn Patch Gown - Pink]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.pages.DetailProductPage.checkDetailProduct(DetailProductPage.java:69)
+	at StepDefinitions.ProductSteps.detail_is_visible_name_product_category_women_dress_rs_availability_in_stock_condition_new_brand_madame(ProductSteps.java:70)
+	at ✽.detail is visible: &apos;Sleeves Top and Short - Blue &amp; Pink&apos;,&apos;Category: Kids &gt; Dress&apos;,&apos;Rs. 1050&apos;,&apos;Availability: In Stock&apos;,&apos;Condition: New&apos;,&apos;Brand: Allen Solly Junior&apos;(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/Product.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace97517255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace97517255'><pre>java.lang.AssertionError: expected [Sleeves Top and Short - Blue &amp; Pink] but found [Sleeveless Unicorn Patch Gown - Pink]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.pages.DetailProductPage.checkDetailProduct(DetailProductPage.java:69)
+	at StepDefinitions.ProductSteps.detail_is_visible_name_product_category_women_dress_rs_availability_in_stock_condition_new_brand_madame(ProductSteps.java:70)
+	at ✽.detail is visible: &apos;Sleeves Top and Short - Blue &amp; Pink&apos;,&apos;Category: Kids &gt; Dress&apos;,&apos;Rs. 1050&apos;,&apos;Availability: In Stock&apos;,&apos;Condition: New&apos;,&apos;Brand: Allen Solly Junior&apos;(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/Product.feature:15)
+</pre></div></td>
+<td>7</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify all products and detail page", "test scratch"</td>
+<td><div><pre>java.lang.AssertionError: expected [Sleeveless Dress] but found [Men Tshirt]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.pages.DetailProductPage.checkDetailProduct(DetailProductPage.java:69)
+	at StepDefinitions.ProductSteps.detail_is_visible_name_product_category_women_dress_rs_availability_in_stock_condition_new_brand_madame(ProductSteps.java:70)
+	at ✽.detail is visible: &apos;Sleeveless Dress&apos;,&apos;Category: Women &gt; Dress&apos;,&apos;Rs. 1000&apos;,&apos;Availability: In Stock&apos;,&apos;Condition: New&apos;,&apos;Brand: Madame&apos;(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/test.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace998481768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace998481768'><pre>java.lang.AssertionError: expected [Sleeveless Dress] but found [Men Tshirt]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.pages.DetailProductPage.checkDetailProduct(DetailProductPage.java:69)
+	at StepDefinitions.ProductSteps.detail_is_visible_name_product_category_women_dress_rs_availability_in_stock_condition_new_brand_madame(ProductSteps.java:70)
+	at ✽.detail is visible: &apos;Sleeveless Dress&apos;,&apos;Category: Women &gt; Dress&apos;,&apos;Rs. 1000&apos;,&apos;Availability: In Stock&apos;,&apos;Condition: New&apos;,&apos;Brand: Madame&apos;(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/test.feature:12)
+</pre></div></td>
+<td>6</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user adds product to cart from detail product page", "Verify Add to Cart functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [Rs. 30000] but found [Rs. 3000]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.pages.CartPage.checkProductAddToCart(CartPage.java:44)
+	at StepDefinitions.AddToCartSteps.check_detail_products_are_displayed_correctly(AddToCartSteps.java:44)
+	at ✽.check detail products are displayed correctly(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/AddToCart.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace687608114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace687608114'><pre>java.lang.AssertionError: expected [Rs. 30000] but found [Rs. 3000]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.pages.CartPage.checkProductAddToCart(CartPage.java:44)
+	at StepDefinitions.AddToCartSteps.check_detail_products_are_displayed_correctly(AddToCartSteps.java:44)
+	at ✽.check detail products are displayed correctly(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/AddToCart.feature:24)
+</pre></div></td>
+<td>8</td>
+<td>runner.RunCuke@660acfb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login User with correct email and password", "Check Login fucntionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify all products and detail page", "Check product page fucntionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "check register functionalty"</td>
+<td></td>
+<td>5</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "delete account successful", "check register functionalty"</td>
+<td></td>
+<td>7</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login User with incorrect email and password", "Check Login fucntionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search product functionality", "Check product page fucntionality"</td>
+<td></td>
+<td>26</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search product functionality", "Check product page fucntionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user logout successful", "Check Login fucntionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register user successful", "check register functionalty"</td>
+<td></td>
+<td>10</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user adds product to cart from product page", "Verify Add to Cart functionality"</td>
+<td></td>
+<td>8</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search product functionality", "Check product page fucntionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.RunCuke@660acfb</td></tr>
+<tr>
+<td title='runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search product functionality", "Check product page fucntionality"</td>
+<td></td>
+<td>5</td>
 <td>runner.RunCuke@660acfb</td></tr>
 </table><p>
 </body>

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\nguye\AppData\Local\Temp\testng-eclipse--699246074\testng-customsuite.xml</span>
+                    <span>C:\Users\nguye\AppData\Local\Temp\testng-eclipse--1828434479\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,105 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">16 methods, 4 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;verify all products and detail page&quot;, &quot;test scratch&quot;)">runScenario("verify all products and detail page", "test scratch")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;verify all products and detail page&quot;, &quot;Check product page fucntionality&quot;)">runScenario("verify all products and detail page", "Check product page fucntionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;verify all products and detail page&quot;, &quot;test scratch&quot;)">runScenario("verify all products and detail page", "test scratch")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user adds product to cart from detail product page&quot;, &quot;Verify Add to Cart functionality&quot;)">runScenario("Verify user adds product to cart from detail product page", "Verify Add to Cart functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Login User with correct email and password&quot;, &quot;Check Login fucntionality&quot;)">runScenario("Login User with correct email and password", "Check Login fucntionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;verify all products and detail page&quot;, &quot;Check product page fucntionality&quot;)">runScenario("verify all products and detail page", "Check product page fucntionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Register User with existing email&quot;, &quot;check register functionalty&quot;)">runScenario("Register User with existing email", "check register functionalty")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;delete account successful&quot;, &quot;check register functionalty&quot;)">runScenario("delete account successful", "check register functionalty")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Login User with incorrect email and password&quot;, &quot;Check Login fucntionality&quot;)">runScenario("Login User with incorrect email and password", "Check Login fucntionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Verify search product functionality&quot;, &quot;Check product page fucntionality&quot;)">runScenario("Verify search product functionality", "Check product page fucntionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Verify search product functionality&quot;, &quot;Check product page fucntionality&quot;)">runScenario("Verify search product functionality", "Check product page fucntionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;user logout successful&quot;, &quot;Check Login fucntionality&quot;)">runScenario("user logout successful", "Check Login fucntionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Register user successful&quot;, &quot;check register functionalty&quot;)">runScenario("Register user successful", "check register functionalty")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user adds product to cart from product page&quot;, &quot;Verify Add to Cart functionality&quot;)">runScenario("Verify user adds product to cart from product page", "Verify Add to Cart functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Verify search product functionality&quot;, &quot;Check product page fucntionality&quot;)">runScenario("Verify search product functionality", "Check product page fucntionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;Verify search product functionality&quot;, &quot;Check product page fucntionality&quot;)">runScenario("Verify search product functionality", "Check product page fucntionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -104,10 +202,234 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.RunCuke</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;verify all products and detail page&quot;, &quot;test scratch&quot;)">
+                  </a> <!-- runScenario("verify all products and detail page", "test scratch") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("verify all products and detail page","test scratch")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.automationexercise.com/product_details/16] but found [https://www.automationexercise.com/product_details/19]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.base.BasePage.checkUrl(BasePage.java:99)
+	at StepDefinitions.ProductSteps.is_displayed(ProductSteps.java:41)
+	at ✽.&apos;https://www.automationexercise.com/product_details/16&apos; is displayed(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/test.feature:11)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;verify all products and detail page&quot;, &quot;Check product page fucntionality&quot;)">
+                  </a> <!-- runScenario("verify all products and detail page", "Check product page fucntionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("verify all products and detail page","Check product page fucntionality")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Sleeves Top and Short - Blue &amp; Pink] but found [Sleeveless Unicorn Patch Gown - Pink]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.pages.DetailProductPage.checkDetailProduct(DetailProductPage.java:69)
+	at StepDefinitions.ProductSteps.detail_is_visible_name_product_category_women_dress_rs_availability_in_stock_condition_new_brand_madame(ProductSteps.java:70)
+	at ✽.detail is visible: &apos;Sleeves Top and Short - Blue &amp; Pink&apos;,&apos;Category: Kids &gt; Dress&apos;,&apos;Rs. 1050&apos;,&apos;Availability: In Stock&apos;,&apos;Condition: New&apos;,&apos;Brand: Allen Solly Junior&apos;(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/Product.feature:15)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;verify all products and detail page&quot;, &quot;test scratch&quot;)">
+                  </a> <!-- runScenario("verify all products and detail page", "test scratch") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("verify all products and detail page","test scratch")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Sleeveless Dress] but found [Men Tshirt]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.pages.DetailProductPage.checkDetailProduct(DetailProductPage.java:69)
+	at StepDefinitions.ProductSteps.detail_is_visible_name_product_category_women_dress_rs_availability_in_stock_condition_new_brand_madame(ProductSteps.java:70)
+	at ✽.detail is visible: &apos;Sleeveless Dress&apos;,&apos;Category: Women &gt; Dress&apos;,&apos;Rs. 1000&apos;,&apos;Availability: In Stock&apos;,&apos;Condition: New&apos;,&apos;Brand: Madame&apos;(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/test.feature:12)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user adds product to cart from detail product page&quot;, &quot;Verify Add to Cart functionality&quot;)">
+                  </a> <!-- runScenario("Verify user adds product to cart from detail product page", "Verify Add to Cart functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user adds product to cart from detail product page","Verify Add to Cart functionality")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Rs. 30000] but found [Rs. 3000]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.myshopping.pages.CartPage.checkProductAddToCart(CartPage.java:44)
+	at StepDefinitions.AddToCartSteps.check_detail_products_are_displayed_correctly(AddToCartSteps.java:44)
+	at ✽.check detail products are displayed correctly(file:///C:/Users/nguye/eclipse-workspace/MyShopping/src/test/resources/features/AddToCart.feature:24)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runner.RunCuke</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login User with correct email and password&quot;, &quot;Check Login fucntionality&quot;)">
+                  </a> <!-- runScenario("Login User with correct email and password", "Check Login fucntionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login User with correct email and password","Check Login fucntionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;verify all products and detail page&quot;, &quot;Check product page fucntionality&quot;)">
+                  </a> <!-- runScenario("verify all products and detail page", "Check product page fucntionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("verify all products and detail page","Check product page fucntionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register User with existing email&quot;, &quot;check register functionalty&quot;)">
+                  </a> <!-- runScenario("Register User with existing email", "check register functionalty") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register User with existing email","check register functionalty")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;delete account successful&quot;, &quot;check register functionalty&quot;)">
+                  </a> <!-- runScenario("delete account successful", "check register functionalty") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("delete account successful","check register functionalty")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login User with incorrect email and password&quot;, &quot;Check Login fucntionality&quot;)">
+                  </a> <!-- runScenario("Login User with incorrect email and password", "Check Login fucntionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login User with incorrect email and password","Check Login fucntionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify search product functionality&quot;, &quot;Check product page fucntionality&quot;)">
+                  </a> <!-- runScenario("Verify search product functionality", "Check product page fucntionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify search product functionality","Check product page fucntionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify search product functionality&quot;, &quot;Check product page fucntionality&quot;)">
+                  </a> <!-- runScenario("Verify search product functionality", "Check product page fucntionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify search product functionality","Check product page fucntionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user logout successful&quot;, &quot;Check Login fucntionality&quot;)">
+                  </a> <!-- runScenario("user logout successful", "Check Login fucntionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user logout successful","Check Login fucntionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register user successful&quot;, &quot;check register functionalty&quot;)">
+                  </a> <!-- runScenario("Register user successful", "check register functionalty") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register user successful","check register functionalty")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user adds product to cart from product page&quot;, &quot;Verify Add to Cart functionality&quot;)">
+                  </a> <!-- runScenario("Verify user adds product to cart from product page", "Verify Add to Cart functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user adds product to cart from product page","Verify Add to Cart functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify search product functionality&quot;, &quot;Check product page fucntionality&quot;)">
+                  </a> <!-- runScenario("Verify search product functionality", "Check product page fucntionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify search product functionality","Check product page fucntionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify search product functionality&quot;, &quot;Check product page fucntionality&quot;)">
+                  </a> <!-- runScenario("Verify search product functionality", "Check product page fucntionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify search product functionality","Check product page fucntionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\nguye\AppData\Local\Temp\testng-eclipse--699246074\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\nguye\AppData\Local\Temp\testng-eclipse--1828434479\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -140,6 +462,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -156,12 +486,76 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runner.RunCuke')
+data.setCell(0, 3, 26211);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runner.RunCuke')
+data.setCell(1, 3, 10652);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runner.RunCuke')
+data.setCell(2, 3, 8510);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runner.RunCuke')
+data.setCell(3, 3, 8487);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runner.RunCuke')
+data.setCell(4, 3, 7906);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runner.RunCuke')
+data.setCell(5, 3, 7357);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runner.RunCuke')
+data.setCell(6, 3, 6829);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runner.RunCuke')
+data.setCell(7, 3, 6631);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runner.RunCuke')
+data.setCell(8, 3, 6433);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runner.RunCuke')
+data.setCell(9, 3, 6089);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runner.RunCuke')
+data.setCell(10, 3, 5954);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runner.RunCuke')
+data.setCell(11, 3, 5699);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runner.RunCuke')
+data.setCell(12, 3, 5583);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runner.RunCuke')
+data.setCell(13, 3, 5474);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runner.RunCuke')
+data.setCell(14, 3, 5325);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runner.RunCuke')
+data.setCell(15, 3, 5019);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -189,14 +583,84 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.RunCuke</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUpClass(org.testng.TestRunner@263f04ca)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@6f89ad03)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user adds product to cart from product page", "Verify Add to Cart functionality")</span>
+                <span class="method-start">714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify user adds product to cart from detail product page", "Verify Add to Cart functionality")</span>
+                <span class="method-start">9227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login User with correct email and password", "Check Login fucntionality")</span>
+                <span class="method-start">17717 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login User with incorrect email and password", "Check Login fucntionality")</span>
+                <span class="method-start">23673 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user logout successful", "Check Login fucntionality")</span>
+                <span class="method-start">28693 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("verify all products and detail page", "Check product page fucntionality")</span>
+                <span class="method-start">35127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("verify all products and detail page", "Check product page fucntionality")</span>
+                <span class="method-start">41217 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify search product functionality", "Check product page fucntionality")</span>
+                <span class="method-start">48575 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify search product functionality", "Check product page fucntionality")</span>
+                <span class="method-start">54276 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify search product functionality", "Check product page fucntionality")</span>
+                <span class="method-start">59603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify search product functionality", "Check product page fucntionality")</span>
+                <span class="method-start">65187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register user successful", "check register functionalty")</span>
+                <span class="method-start">91400 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register User with existing email", "check register functionalty")</span>
+                <span class="method-start">102054 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("delete account successful", "check register functionalty")</span>
+                <span class="method-start">107529 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("verify all products and detail page", "test scratch")</span>
+                <span class="method-start">115437 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("verify all products and detail page", "test scratch")</span>
+                <span class="method-start">122069 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">487 ms</span>
+                <span class="method-start">128901 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

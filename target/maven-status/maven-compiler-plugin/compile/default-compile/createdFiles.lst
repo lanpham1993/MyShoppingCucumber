@@ -3,6 +3,7 @@ com\myshopping\pages\DeletedAccountPage.class
 com\myshopping\pages\ContactUsPage.class
 com\myshopping\pages\menuCategoryBrand.class
 com\myshopping\pages\TopNavigation.class
+com\myshopping\pages\CheckoutPage.class
 com\myshopping\base\SeleniumDriver.class
 com\myshopping\pages\DetailProductPage.class
 com\myshopping\pages\LoginPage.class
