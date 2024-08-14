@@ -7,6 +7,7 @@ import com.myshopping.pages.CartPage;
 import com.myshopping.pages.DetailProductPage;
 import com.myshopping.pages.ProductPage;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -37,7 +38,7 @@ public class AddToCartSteps {
 	}
 
 	@And("check detail products are displayed correctly")
-	public void check_detail_products_are_displayed_correctly(io.cucumber.datatable.DataTable dataTable) {
+	public void check_detail_products_are_displayed_correctly(DataTable dataTable) {
 		List<List<String>> list = dataTable.asLists(String.class);
 		for (List<String> l : list) {
 			String productID = "product-";
@@ -57,12 +58,12 @@ public class AddToCartSteps {
 
 	@And("edit Quanity to {string}")
 	public void edit_quanity_to(String value) {
-       detail.editQuantity(value);
+		detail.editQuantity(value);
 	}
 
 	@And("clicks button Add to Cart")
 	public void clicks_button_add_to_cart() {
-          detail.clickAddtoCart();
+		detail.clickAddtoCart();
 	}
 
 	@And("Clicks View Cart on Popup")
@@ -71,7 +72,10 @@ public class AddToCartSteps {
 	}
 
 	@When("user clicks View product on random product")
-	public void user_clicks_view_product_on_random_product() {
-		detail = product.viewItem(5);
+	public void user_clicks_view_product_on_random_product(DataTable dataTable) {
+		List<List<String>> list = dataTable.asLists(String.class);
+		for (List<String> l : list) {
+			detail = product.viewItem(Integer.parseInt(l.get(0)));
+		}
 	}
 }

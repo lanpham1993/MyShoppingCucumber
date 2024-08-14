@@ -17,10 +17,11 @@ Feature: Verify Add to Cart functionality
 
   Scenario: Verify user adds product to cart from detail product page 
      When user clicks View product on random product
+     |5|
      And edit Quanity to '5'
      And clicks button Add to Cart
      And Clicks View Cart on Popup
      Then '1' products are added to Cart
     And check detail products are displayed correctly
-      |  5 | Rs. 600  | 5 | Rs. 30000  |
+      |  5 | Rs. 600  | 5 | Rs. 3000  |
       

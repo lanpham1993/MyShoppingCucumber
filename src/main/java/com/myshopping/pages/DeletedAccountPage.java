@@ -14,24 +14,23 @@ public class DeletedAccountPage extends BasePage {
 		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
 		PageFactory.initElements(factory, this);
 	}
-	
-	@FindBy(css="h2[class='title text-center'] b")
+
+	@FindBy(css = "h2[class='title text-center'] b")
 	WebElement title;
-	
-	@FindBy(css=".btn.btn-primary")
+
+	@FindBy(css = ".btn.btn-primary")
 	WebElement continuedBtn;
-	
-	
+
 	public void checkTitle(String expected) {
 		String actual = title.getText();
 		Assert.assertEquals(actual.toUpperCase(), expected);
 	}
-	
+
 	public void goToContinued() {
 		continuedBtn.click();
 	}
-	
+
 	public void checkContinueBtnIsPresent() {
-		Assert.assertTrue(isPresented(continuedBtn),"button continue Account is visible");
+		Assert.assertTrue(isPresented(continuedBtn), "button continue Account is visible");
 	}
 }
